@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        background-color: #e1dcc5;
+        color: rgb(44, 3, 3);
+        text-align: center;
+      }
+
+      h1 {
+        background-color: brown;
+        height: 60px;
+        align-items: center;
+      }
+
+      .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40em ;
+        color: rgb(44, 3, 3);
+
+      }
+
+      .container{
+        margin: 30px;
+        height: 70vmin;
+        width: 80vmin;
+        background-color: #e1dcc6;
+        border: 2px solid brown;
+        border-radius: 2em;
+        box-shadow: 0 0 16px rgb(0,0,0,0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .formlogin{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .work{
+        border-radius: 5px;
+        border: 2px solid brown;
+        height: 4vmin;
+        width: 50vmin;
+        text-align: center;
+      }
+
+      .btn{
+        height: 4vmin;
+        width: 20vmin;
+        border-radius: 8px;
+        background-color: brown;
+        color: rgb(44, 3, 3);
+        font-size: 3vmin;
+      }
+
+      .again{
+        display: flex;
+        gap: 10px;
+      }
+
+      .links{
+        text-decoration: none;
+        color: rgb(44, 3, 3) ;
+      }
+  
+    </style>
+  </head>
+  <body>
+    <h1>Log In</h1>
+    <div class="box">
+        <div class="container">
+          <form action="" class="formlogin">
+          <h3>Enter your full Name:</h3><input type="text" name="name" id="name" class="work" placeholder="Siddhi Gupta">
+          <h3>Enter mobile number:</h3><input type="number" name="number" id="phnum" placeholder="+91-XXXXXXXXXX" class="work">
+          <h3>Enter email address:</h3><input type="email" name="emailId" id="e-mail" placeholder="example@gmail.com" class="work">
+          <h3>Enter password:</h3><input type="text" name="name" id="name" class="work" placeholder="password">
+          <br>
+          <button class="btn" onClick="alert('Logged In Succsessfully')">Log In</button>
+          <br>
+          <hr style="height:2px; border-width:0; color:gray; background-color:gray">
+          <div class="again">
+            <h4>Already registered?</h4>
+            <button class="btn"><a href="signup.html" class="links">Sign Up</a></button>
+          </div>
+        </form>
+        </div>
+          
+    </div>
+  </body>
+</html>
